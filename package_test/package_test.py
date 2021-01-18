@@ -1,2 +1,2 @@
-def package_test():
+def hello():
     print("Hello World")

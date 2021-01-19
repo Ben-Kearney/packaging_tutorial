@@ -3,15 +3,19 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
+with open("LICENSE", "r", encoding="utf-8") as fh:
+    license_file = fh.read()
+
 setuptools.setup(
-    name="package_test",
-    version="0.0.3",
+    name="packageTest",
+    version="0.0.4",
     author="bkearney",
     author_email="bkearney@intelcomexpress.com",
     description="A small example package",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),
+    license=license_file,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
